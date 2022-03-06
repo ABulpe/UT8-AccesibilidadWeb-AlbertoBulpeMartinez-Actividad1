@@ -22,13 +22,12 @@ Para usos en todo el DOM
 
 /* Parrafos y definiciones que tengan el mismo estilo:
 Color de la fuente, el espacio entre lineas
-Padding superior e inferior, para crear una pequeña separación y el texto justificado*/
-
+Padding superior e inferior, para crear una pequeña separación y el texto sin justificar*/
 p, dd{
 	padding: 12px 0px;
 	color: #222;
-	line-height: 1.4rem;
-	text-align: justify;
+	line-height: 1.5rem;
+	text-align: left;
 }
 
 /*Quitar el margen inicial que mete por defecto los navegadores.*/
@@ -49,7 +48,7 @@ blockquote{
 	padding: 20px;
 	font-size: 1.2rem;
 	line-height: 1.7rem;
-	text-align: justify;
+	text-align: center;
 	color: #222;
 }
 
@@ -129,7 +128,7 @@ header h1{
 y le decimos que el borde y padding se incluya en la caja y no modique el ancho para después hacer 
 hover en los enlaces y que no deforme los tamaños*/
 a{
-	text-decoration: none;
+	text-decoration: underline ;
 	box-sizing: border-box;
 }
 /* Damos el ancho completo al menú de navegación y añadimos la línea de separación inferior gris*/
@@ -156,6 +155,7 @@ nav ul li a{
 	color: #222;
 	padding: 8px 15px;
 	margin: 0px;
+	text-decoration: none;
 }
 
 /*Aplicamos un borde inferior al hacer hover al enlace 
@@ -172,7 +172,7 @@ article .pie-foto{text-align: center;}
 
 /*Justificamos el texto, damos un poco de padding y los margenes laterales*/
 section p{
-	text-align: justify;
+	text-align: left;
 	padding: 1px 0px;
 	margin-left: 5px;
     margin-right: 5px;
